@@ -1,38 +1,40 @@
-# 02 - Metodologias Ágeis
+📘 02 - Metodologias Ágeis
+✅ O que aprendi:
+Metodologias Ágeis são formas de gerenciar projetos de software que priorizam:
 
-Neste módulo, aprendi como as metodologias ágeis funcionam, seus principais valores e como elas transformaram a forma de desenvolver software com mais colaboração e foco no cliente.
+Entregas rápidas e frequentes
 
----
+Colaboração com o cliente
 
-## 🧠 O que aprendi:
+Adaptação a mudanças
 
-- A diferença entre **metodologias tradicionais (cascata)** e as **ágeis (incrementais e iterativas)**.
-- Os **valores e princípios do Manifesto Ágil**.
-- O que é o **Scrum** e os principais papéis: Product Owner, Scrum Master e Time de Desenvolvimento.
-- A importância da **entrega contínua e melhoria constante**.
+Comunicação constante entre os membros do time
 
----
+📜 Manifesto Ágil:
+4 valores fundamentais:
 
-## 📝 Anotações importantes:
+Indivíduos e interações mais que processos e ferramentas
 
-- O **Manifesto Ágil** valoriza:
-  - Indivíduos e interações > Processos e ferramentas  
-  - Software funcionando > Documentação extensiva  
-  - Colaboração com o cliente > Negociação de contratos  
-  - Responder a mudanças > Seguir um plano
+Software funcionando mais que documentação abrangente
 
-- O ciclo Scrum é composto por:  
-  **Sprint Planning → Sprint → Daily → Sprint Review → Sprint Retrospective**
+Colaboração com o cliente mais que negociação de contratos
 
-- O QA participa **desde o início**, ajudando na definição dos critérios de aceitação e qualidade.
+Responder a mudanças mais que seguir um plano
 
----
+12 princípios complementam esses valores e orientam como equipes devem trabalhar no dia a dia.
 
-## 💬 Exemplo real:
+🛠️ Métodos ágeis mais conhecidos:
+Scrum: baseado em sprints (ciclos curtos de entrega), papéis definidos (PO, Scrum Master, Dev Team) e cerimônias como Daily e Sprint Review.
 
-Em uma equipe ágil, o QA já começa a pensar em testes enquanto o PO escreve as histórias de usuário.  
-Ele participa das **dailies**, ajuda o time a prever riscos e testa ao longo da sprint, **não só no final**.
+Kanban: sistema visual de gestão de tarefas com foco em fluxo contínuo.
 
----
+XP (Extreme Programming): foca na qualidade do código com práticas como testes automatizados e programação em par.
 
-🔙 [Voltar para o índice do curso](../README.md)
+🧠 Por que é importante para QA?
+O QA participa ativamente desde o início das sprints, ajudando a definir critérios de aceitação.
+
+Os testes são contínuos e integrados ao processo de entrega.
+
+💡 Exemplo prático:
+Em um projeto ágil usando Scrum, um analista de testes acompanha a daily, entende o que os desenvolvedores estão implementando e já prepara os testes de cada história de usuário conforme os critérios de aceitação definidos junto ao PO.
+
