@@ -1,93 +1,84 @@
-Aula 09 – Mapeamento de Funcionalidades com Storytelling (TodoMVC)
+10 – Gherkin: Do Básico ao Avançado
+✅ O que aprendi:
+Gherkin é uma linguagem universal para escrever cenários de teste, usada tanto em testes manuais quanto automatizados.
 
-1️⃣ Contexto da Aula
-Objetivo: Aprender a analisar um sistema já existente, documentar funcionalidades e criar User Stories claras usando a técnica de storytelling.
+É independente de linguagem de programação, mas muito utilizada dentro da metodologia BDD (Behavior Driven Development).
 
-Sistema analisado: Projeto open source TodoMVC (versão React).
+Traz clareza, padronização e reuso para os testes.
 
-Ferramenta de apoio: Miro para organização visual.
+🔑 Keywords básicas:
+DADO (Given) → Define o contexto inicial.
 
-Foco: Mapeamento de funcionalidades, definição de regras de negócio e critérios de aceite.
+QUANDO (When) → Descreve a ação principal.
 
-Desafio – Análise e Documentação de Funcionalidades
-Este documento apresenta a análise das três funcionalidades propostas no desafio, incluindo User Stories, Regras de Negócio e Critérios de Aceite para cada uma.
+ENTÃO (Then) → Define o resultado esperado.
 
-1. Conclusão de itens de forma unitária
-User Story
+E (And) → Agrupa ações ou condições adicionais.
 
-Como usuário, quero concluir um item individualmente para que eu possa organizar minha lista de forma gradual.
+MAS (But) → Acrescenta um contraponto ou resultado negativo esperado.
 
-Regras de Negócio
+Exemplo simples:
 
-Apenas itens pendentes podem ser marcados como concluídos.
+gherkin
+Copiar
+Editar
+DADO que sou aluno da plataforma Qualiters Club
+QUANDO adiciono meus dados de acesso corretos
+ENTÃO o login é realizado na plataforma
+📈 Keywords intermediárias:
+Funcionalidade (Feature) → Define o objetivo geral a ser testado.
 
-Ao concluir um item, o sistema deve registrar a data/hora da ação.
+Cenário (Scenario) → Agrupa os passos de um teste específico.
 
-Itens concluídos devem ter destaque visual (ex.: texto riscado ou cor diferente).
+Contexto (Background) → Passos comuns a vários cenários.
 
-Deve ser possível reverter a conclusão (voltar para pendente).
+Esquema do Cenário (Scenario Outline) → Permite reutilizar o mesmo cenário com diferentes massas de teste.
 
-Critérios de Aceite
+Exemplo com Contexto:
 
-Dado que existe um item pendente
-Quando o usuário clicar no botão/conteúdo de “Concluir”
-Então o sistema deve alterar o status para “Concluído” e aplicar a formatação visual.
+gherkin
+Copiar
+Editar
+Funcionalidade: Login no sistema
+  Contexto:
+    DADO que estou na página de login
 
-Dado que existe um item concluído
-Quando o usuário clicar para reverter
-Então o sistema deve voltar o status para “Pendente”.
+  Cenário: Login com credenciais corretas
+    QUANDO insiro usuário válido e senha correta
+    ENTÃO o acesso é permitido
+⚙️ Keywords avançadas e recursos adicionais:
+Strings ("") → Para textos.
 
-2. Conclusão de itens em lote
-User Story
+Tabelas (| |) → Para dados estruturados.
 
-Como usuário, quero concluir vários itens ao mesmo tempo para economizar tempo na organização da lista.
+Tags (@) → Para identificar ou filtrar testes.
 
-Regras de Negócio
+Comentários (#) → Ignorados pelo interpretador.
 
-Apenas itens pendentes podem ser selecionados para conclusão.
+Asterisco (*) → Step coringa que pode assumir qualquer tipo de step.
 
-O sistema deve permitir seleção múltipla de itens.
+💡 Benefícios do uso de Gherkin:
+Facilita a comunicação entre times técnicos e não técnicos.
 
-Ao confirmar a ação, todos os itens selecionados devem ser concluídos simultaneamente.
+Evita ambiguidades na documentação de testes.
 
-Deve haver destaque visual para os itens selecionados antes da ação final.
+Permite reuso de cenários na automação.
 
-Critérios de Aceite
+Cria documentação viva que acompanha o produto.
 
-Dado que existem múltiplos itens pendentes
-Quando o usuário selecionar dois ou mais itens e clicar em “Concluir”
-Então todos devem ter o status alterado para “Concluído” e a formatação aplicada.
+🧠 Exemplo prático de cenário com Esquema:
+gherkin
+Copiar
+Editar
+Funcionalidade: Login com múltiplos perfis
 
-Dado que o usuário não selecionou nenhum item
-Quando tentar concluir
-Então o sistema deve exibir uma mensagem informando que é necessário selecionar pelo menos um item.
+  Esquema do Cenário: Validar acesso por perfil de usuário
+    DADO que estou na página de login
+    QUANDO insiro <usuario> e <senha>
+    ENTÃO o acesso é permitido
 
-3. Limpar todos os itens concluídos
-User Story
-
-Como usuário, quero remover todos os itens concluídos de uma só vez para manter minha lista limpa e organizada.
-
-Regras de Negócio
-
-Apenas itens com status “Concluído” podem ser removidos nessa ação.
-
-A remoção é permanente (não há opção de desfazer).
-
-O sistema deve solicitar confirmação antes da exclusão.
-
-Caso não existam itens concluídos, o botão/opção de limpeza deve estar desativado.
-
-Critérios de Aceite
-
-Dado que existem itens concluídos
-Quando o usuário clicar em “Limpar concluídos” e confirmar
-Então todos devem ser removidos da lista.
-
-Dado que não existem itens concluídos
-Quando o usuário acessar a opção
-Então o sistema deve manter o botão desativado ou exibir mensagem “Nenhum item concluído para remover”.
-
-📌 Observações finais
-O formato User Story + Regras de Negócio + Critérios de Aceite segue as boas práticas de análise ágil.
-
-
+  Exemplos:
+    | usuario   | senha      |
+    | admin     | 123456     |
+    | suporte   | abcdef     |
+    | usuario   | senhauser  |
