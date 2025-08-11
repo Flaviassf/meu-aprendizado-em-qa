@@ -11,7 +11,7 @@ Aqui compartilho meus estudos, anotações e práticas realizadas durante minha 
 |-------|--------|------|
 | ✅ Fundamentos do Teste de Software | Concluído | [Acessar](./fundamentos-teste-software) |
 | ✅ Gestão Ágil com Scrum | Concluído | [Acessar](./scrum) |
-| ✅Teste de Software Manual | Em andamento | [Acessar](link_antigo) |
+| ✅Teste de Software Manual |Concluído| [Acessar](link_antigo) |
 
 
 ---
