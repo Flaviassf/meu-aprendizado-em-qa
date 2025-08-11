@@ -12,6 +12,8 @@ Aqui compartilho meus estudos, anotações e práticas realizadas durante minha 
 | ✅ Fundamentos do Teste de Software | Concluído | [Acessar](./fundamentos-teste-software) |
 | ✅ Gestão Ágil com Scrum | Concluído | [Acessar](./scrum) |
 | ✅Teste de Software Manual |Concluído| [Acessar](https://github.com/Flaviassf/meu-aprendizado-em-qa/tree/main/teste-manual) |
+| 📋 Jira + Xray 2024: Aprenda a criar e gerir seu Plano de Teste | Em andamento | [Acessar](link_do_curso_no_github) |
+
 
 
 ---
